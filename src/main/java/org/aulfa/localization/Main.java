@@ -1,12 +1,16 @@
 package org.aulfa.localization;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;
 import org.xml.sax.Locator;
+import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.SAXParserFactory;
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -36,12 +40,13 @@ public final class Main
 
   private static final class Content implements ContentHandler
   {
+    private final CSVPrinter printer;
     private Locator locator;
     private Optional<StringResource> element = Optional.empty();
 
-    Content()
+    Content(final CSVPrinter printer)
     {
-
+      this.printer = printer;
     }
 
     @Override
@@ -108,15 +113,21 @@ public final class Main
       final char[] ch,
       final int start,
       final int length)
+      throws SAXException
     {
       if (this.element.isPresent()) {
         final var resource = this.element.get();
         final var text = new String(ch, start, length);
-        System.out.printf(
-          "%d,%s,%s\n",
-          Integer.valueOf(resource.line_number),
-          resource.name,
-          text);
+
+        try {
+          this.printer.print(Integer.valueOf(resource.line_number));
+          this.printer.print(resource.name);
+          this.printer.print(text);
+          this.printer.println();
+        } catch (final IOException e) {
+          throw new SAXException(e);
+        }
+
         this.element = Optional.empty();
       }
     }
@@ -164,10 +175,14 @@ public final class Main
       "http://xml.org/sax/features/namespaces",
       true);
 
-    try (final InputStream stream = Files.newInputStream(path)) {
-      final var content = new Content();
-      reader.setContentHandler(content);
-      reader.parse(new InputSource(stream));
+    try (final var printer =
+           CSVFormat.RFC4180.withHeader("GitHub Line", "Name", "English")
+             .printer()) {
+      try (final InputStream stream = Files.newInputStream(path)) {
+        final var content = new Content(printer);
+        reader.setContentHandler(content);
+        reader.parse(new InputSource(stream));
+      }
     }
   }
 }
