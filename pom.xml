@@ -8,16 +8,16 @@
 
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
-    <artifactId>com.io7m.primogenitor</artifactId>
-    <version>3.0.0-beta0017</version>
+    <artifactId>com.io7m.primogenitor.full</artifactId>
+    <version>3.5.0</version>
   </parent>
 
-  <groupId>org.aulfa</groupId>
-  <artifactId>org.aulfa.localization-strings</artifactId>
+  <groupId>one.lfa</groupId>
+  <artifactId>one.lfa.localization-strings</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>org.aulfa.localization-strings</name>
+  <name>one.lfa.localization-strings</name>
   <description>OPDS offline mirroring tool</description>
   <url>http://github.com/AULFA/localization-strings</url>
 

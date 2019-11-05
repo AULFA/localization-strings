@@ -1,4 +1,4 @@
-package org.aulfa.localization;
+package one.lfa.localization;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
