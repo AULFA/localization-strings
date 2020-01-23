@@ -1,0 +1,249 @@
+GitHub Line,Name,English
+4,nav_confirm,Confirm
+5,nav_done,Done
+6,nav_next,Next
+9,eula_disagree,Disagree
+10,eula_agree,Agree
+11,eula_checkbox,I agree to the terms of the End User License Agreement.
+14,age_verification_title,Age Verification
+15,age_verification_question,You must be 13 years of age or older to download a book from the collection.\nHow old are you?
+16,age_verification_changed,"If you are under 13, all content downloaded to My Books will be removed.\nHow old are you?"
+17,age_verification_13_older,13 or Older
+18,age_verification_13_younger,Under 13
+19,age_verification_13_checkbox,I am 13 years of age or older.
+20,age_verification_too_young,You are not old enough to sign up for a library card.
+23,books,My Books
+24,books_sync,Sync Account
+25,books_sort_by,Sort By
+26,books_sort_by_author,Author
+27,books_sort_by_title,Title
+30,holds,Reservations
+31,holds_empty,When you reserve a book from the catalog it will show up here. Look here from time to time to see if your book is available to download.
+34,catalog,Catalogue
+35,catalog_book_more,More…
+36,catalog_book_description,Description
+37,catalog_book_detail,Details
+38,catalog_load_error_title,Error
+39,catalog_load_error_text,An error occurred while loading the catalog. Please try again.
+40,catalog_load_not_connected,You are not connected to the internet. Please connect and try again.
+41,catalog_book_revoke_loan_confirm,Are you sure you want to return this book?
+42,catalog_book_revoke_hold_confirm,Are you sure you want to remove this reservation?
+43,catalog_book_delete_confirm,Are you sure you want to remove this book from My Books?
+44,catalog_cancel_downloading,Cancel
+45,catalog_categories,Categories
+46,catalog_detail_related,Related Books
+47,catalog_revoke_failed,The operation could not be completed.
+48,catalog_download_failed,The download could not be completed.
+49,catalog_download_failed_too_many_activations,The download could not be completed. Adobe device activations reached.
+50,catalog_download_failed_account_not_active,This device has not been activated. Go to account settings to activate.
+51,catalog_download_failed_loan_limit_reached,Book loan limit reached.
+52,catalog_download_failed_unsupported_pdf,"This book is an Adobe PDF, which is not supported."
+53,catalog_download_failed_unsupported_unknown,This book is of an unknown type and is not supported.
+54,catalog_download_failed_unsupported_passhash,Passhash protected books are not supported.
+55,catalog_downloading,Downloading
+56,catalog_empty_feed,No results found.
+57,catalog_empty_my_books,Visit the Catalog to\nadd books to My Books.
+58,catalog_meta_corrupt,The metadata for this book is damaged! Please sync your account to fix it.
+59,catalog_meta_corrupt_title,Metadata damaged
+60,catalog_publication_date,Published
+61,catalog_publisher,Publisher
+62,catalog_refresh,Refresh Feed
+63,catalog_search,Search
+64,catalog_unknown_feed,Unknown
+65,catalog_more_feed,More
+66,catalog_requesting_loan,Requesting
+67,catalog_requesting_revoke,Requesting
+68,catalog_added_for_later_download,Added to My Books for downloading later.
+71,catalog_book_borrow,Get
+72,catalog_book_reserve,Reserve
+73,catalog_book_read,Read
+74,catalog_book_error_dismiss,Dismiss
+75,catalog_book_error_retry,Retry
+76,catalog_book_error_retry_now,Retry Now
+77,catalog_book_error_download_later,Download Later
+78,catalog_book_sync,Sync
+79,catalog_book_download,Download
+80,catalog_book_add,Add to My Books
+81,catalog_book_delete,Remove
+82,catalog_book_revoke_loan,Return Now
+83,catalog_book_revoke_hold,Remove
+84,catalog_book_report,Report Issue
+85,catalog_book_distribution,Distributed by: %s
+86,catalog_book_revoke_cancel,Cancel
+88,catalog_book_availability_loaned_indefinite,You have this book on loan.
+89,catalog_book_availability_loaned_timed,You have this book on loan for %s.
+90,catalog_book_availability_open_access,This book is yours to keep.
+91,catalog_book_availability_held_indefinite,You have this book on hold.
+92,catalog_book_availability_held_timed,You will be able to borrow this book in %s.
+93,catalog_book_availability_held_queue,You are at position %d in the queue for this book.
+94,catalog_book_availability_reserved_timed,Your reservation expires in %s.
+95,catalog_book_availability_reserved_indefinite,You have this book reserved.
+96,catalog_book_availability_loanable,This book is available for loan.
+97,catalog_book_availability_holdable,All copies of this book are currently on loan.
+98,catalog_book_availability_revoked,This book is waiting to be returned.
+99,catalog_book_interval_days,days
+100,catalog_book_interval_hours,hours
+101,catalog_book_interval_sub_hour,less than an hour
+102,catalog_book_interval_years_short,y
+103,catalog_book_interval_months_short,m
+104,catalog_book_interval_weeks_short,w
+105,catalog_book_interval_days_short,d
+106,catalog_book_interval_hours_short,h
+108,catalog_book_summary_publisher,Book Publisher
+111,catalog_book_report_wrong_genre,Wrong Genre
+112,catalog_book_report_wrong_audience,Wrong Audience
+113,catalog_book_report_wrong_age_range,Wrong Age Range
+114,catalog_book_report_wrong_title,Wrong Title
+115,catalog_book_report_wrong_medium,Wrong Medium
+116,catalog_book_report_wrong_author,Wrong Author
+117,catalog_book_report_wrong_cover_image,Wrong/Missing Cover Image
+118,catalog_book_report_wrong_description,Wrong/Mismatched Description
+119,catalog_book_report_cant_download,Can\'t Download
+120,catalog_book_report_cant_borrow,Can\'t Borrow
+121,catalog_book_report_incorrect_contents,Book Contents Blank or Incorrect
+123,catalog_book_report_cancel,Cancel
+124,catalog_book_report_submit,Submit
+127,help,Frequently Asked Questions
+130,library_signup_title,Sign Up for a Library Card
+133,location_no_valid_address,No valid address found
+136,settings,About
+137,settings_login_title,Library Card
+138,settings_barcode,Barcode
+139,settings_pin,PIN
+140,settings_name,Name
+141,settings_screen_Lock_not_setup,"""Secure lock screen hasn't been set up. Go to 'Settings -> Security -> Screenlock' to set up a lock screen"""
+142,settings_log_in_cancel,Cancel
+143,settings_log_in,Log In
+144,settings_log_out,Log Out
+145,settings_authentication_title,Authentication
+146,settings_device_title,Device
+147,settings_activate_this_device,Activate this Device
+148,settings_deactivate_this_device,Deactivate this Device
+149,settings_log_out_cancel,Cancel
+150,settings_login_succeeded,Logged in successfully
+151,settings_logout_succeeded,Logged out successfully
+152,settings_login_failed,Login Failed
+153,settings_login_failed_credentials,Your barcode and pin combination was not valid. Please try again.
+154,settings_login_failed_server,An unknown error occurred. Please check your connection or try again later.
+155,settings_logout_failed_server,An unknown error occurred. Please check your connection or try again later.
+156,settings_login_failed_device,An error occurred when activating your device. Please check your connection or try again later.
+157,settings_login_failed_adobe_device_limit,Too many devices have been registered on this account. Please contact Adobe support for assistance.
+158,settings_login_failed_adobe_device_bad_clock,An error occurred when activating your device. Please check that your device clock is set to the correct time.
+159,settings_logout_failed,Logout Failed
+160,settings_feedback,Feedback
+161,settings_about,About SimplyE
+162,settings_account,Account
+163,settings_accounts,Accounts
+164,settings_manage_accounts,Manage Accounts
+165,settings_credits,Acknowledgements
+166,settings_eula,User Agreement
+167,settings_report_issue,Report an Issue
+168,settings_privacy,Privacy Policy
+169,settings_licences,Licenses
+170,settings_licence_software,Software License
+171,settings_licence_content,Content License
+172,settings_logout_confirm,"If you sign out of your account, all content will be removed from this device."
+173,settings_adobe_accounts,Adobe Accounts
+174,settings_alt_uris,Alternate URIs
+175,settings_reveal_password,Show PIN
+176,settings_application_version,Application Version
+178,login_needed,You need to login to access the collection.
+179,login_with_barcode,Login with Barcode
+180,login_with_clever,Login with Clever
+181,request_new_codes,Request New Code
+183,navigation_accessibility,Navigation
+184,navigation_accessibility_drawer_show,Show navigation drawer. button.
+185,navigation_accessibility_drawer_hide,Hide navigation drawer. button.
+188,settings_accessibility_log_in_cancel,Cancel login
+189,settings_accessibility_log_in,Log in
+190,settings_accessibility_log_out_cancel,Cancel logout
+191,settings_accessibility_log_out,Log out
+193,catalog_accessibility_book_borrow,Get Button
+194,catalog_accessibility_book_reserve,Reserve Button
+195,catalog_accessibility_book_read,Read Button
+196,catalog_accessibility_book_error_dismiss,Dismiss Button
+197,catalog_accessibility_book_error_retry,Retry Button
+198,catalog_accessibility_book_sync,Sync Button
+199,catalog_accessibility_book_download,Download Button
+200,catalog_accessibility_book_add,Add to My Books Button
+201,catalog_accessibility_book_delete,Remove Button
+202,catalog_accessibility_book_revoke_loan,Return Now Button
+203,catalog_accessibility_book_revoke_hold,Remove Button
+204,catalog_accessibility_book_revoke_loan_cancel,Cancel Return Now
+205,catalog_accessibility_book_revoke_hold_cancel,Cancel Remove
+206,catalog_accessibility_header_show_more,show more in %1$s
+209,reader,Reader
+210,reader_toc,Table Of Contents
+211,reader_error_book_database,There was a problem with the book database.
+212,reader_error_account_database,There was a problem with the accounts database.
+213,reader_error_epub_error,The given EPUB file could not be loaded.
+214,reader_error_epub_missing,The given EPUB file appears to be missing and therefore cannot be loaded.
+215,reader_error_general,An error occurred whilst trying to set up the reader.
+218,reader_accessibility_toc,Show table of contents
+219,reader_accessibility_toc_back,Close the table of contents without selecting an item
+220,reader_accessibility_settings,Show reader settings
+221,reader_accessibility_close,Close the book
+222,reader_accessibility_media_previous,Go to previous media item
+223,reader_accessibility_media_next,Go to next media item
+224,reader_accessibility_media_play,Play or pause current media item
+226,reader_accessibility_settings_sans_font,Sans font
+227,reader_accessibility_settings_serif_font,Serif font
+228,reader_accessibility_settings_open_dyslexic_font,Open dyslexic font
+229,reader_accessibility_settings_white_on_black_text,White on black text
+230,reader_accessibility_settings_black_on_sepia_text,Black on sepia text
+231,reader_accessibility_settings_black_on_white_text,Black on white text
+232,reader_accessibility_settings_decrease_font_size,Decrease font size
+233,reader_accessibility_settings_increase_font_size,Increase font size
+234,reader_accessibility_settings_brightness_slider,Brightness slider
+235,reader_accessibility_settings_close,Close reader settings
+236,reader_settings_close,Close
+239,welcome_library_header,Read E-Books from Your Library
+240,welcome_library_subtext,"Simply browse, borrow, and read free e-books from your local library."
+241,welcome_library_button,Find Your Library
+242,welcome_instant_header,SimplyE Collection
+243,welcome_instant_subtext,E-books free to download and read without a library card.
+244,welcome_instant_button,Read Now
+247,need_card_question,Don\'t have a library card?
+248,need_card_button,Sign Up
+249,need_card_create,Create Card
+252,profiles_title,Profiles
+253,profiles_select,Please select an existing profile or create a new one.
+254,profiles_create,Create
+255,profiles_modify,Change
+256,profiles_please_enter,"Please enter your name, gender, and date of birth."
+257,profiles_name_field,Name
+258,profiles_gender_male,Male
+259,profiles_gender_female,Female
+260,profiles_gender_non_binary,Non-binary
+261,profiles_selection_error_general,An error occurred whilst trying to select your profile.
+262,profiles_creation_error_name_already_used,That name has already been used. Please pick another.
+263,profiles_creation_error_general,An error occurred whilst trying to create your profile.
+264,profiles_account_selection_error_general,An error occurred whilst trying to select an account.
+265,profiles_account_creation_error_general,An error occurred whilst trying to create the account.
+266,profiles_account_deletion_error_general,An error occurred whilst trying to delete the account.
+267,profiles_switch,Switch Profile
+268,profiles_switch_confirm,Are you sure you want to switch profiles?
+269,profiles_delete_confirm,Are you sure you want to delete this profile?
+270,profiles_delete,Delete Profile
+271,profiles_delete_button,Delete
+272,profiles_cancel_button,Cancel
+273,profiles_time_out_soon,The current profile will soon be logged out due to inactivity. Please touch the screen if you want to stay logged in.
+274,profiles_time_out_soon_title,Profile Inactivity
+275,versions_revision,Build
+276,versions_version,Version
+277,profiles_deletion_error,An error occurred whilst trying to delete the profile.
+278,profiles_role_parent,Parent
+279,profiles_role_teacher,Teacher
+280,profiles_role_student,Student
+281,profiles_role_other,Other
+282,profiles_ask_name,What is your name?
+283,profiles_ask_gender,What is your gender?
+284,profiles_gender_other,Other
+285,profiles_ask_birth,What is your date of birth?
+286,profiles_ask_role,Are you a ..?
+287,profiles_ask_pilot_school,Is your school in an eLibrary pilot program?
+288,profiles_create_title,Create A Profile
+289,profiles_modify_title,Modify A Profile
+290,profiles_pilot_no,No
+291,profiles_pilot_yes,"Yes, my school is:"
+292,profiles_ask_grade,What is your school grade?
