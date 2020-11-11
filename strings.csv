@@ -1,249 +1,562 @@
-GitHub Line,Name,English
-4,nav_confirm,Confirm
-5,nav_done,Done
-6,nav_next,Next
-9,eula_disagree,Disagree
-10,eula_agree,Agree
-11,eula_checkbox,I agree to the terms of the End User License Agreement.
-14,age_verification_title,Age Verification
-15,age_verification_question,You must be 13 years of age or older to download a book from the collection.\nHow old are you?
-16,age_verification_changed,"If you are under 13, all content downloaded to My Books will be removed.\nHow old are you?"
-17,age_verification_13_older,13 or Older
-18,age_verification_13_younger,Under 13
-19,age_verification_13_checkbox,I am 13 years of age or older.
-20,age_verification_too_young,You are not old enough to sign up for a library card.
-23,books,My Books
-24,books_sync,Sync Account
-25,books_sort_by,Sort By
-26,books_sort_by_author,Author
-27,books_sort_by_title,Title
-30,holds,Reservations
-31,holds_empty,When you reserve a book from the catalog it will show up here. Look here from time to time to see if your book is available to download.
-34,catalog,Catalogue
-35,catalog_book_more,More…
-36,catalog_book_description,Description
-37,catalog_book_detail,Details
-38,catalog_load_error_title,Error
-39,catalog_load_error_text,An error occurred while loading the catalog. Please try again.
-40,catalog_load_not_connected,You are not connected to the internet. Please connect and try again.
-41,catalog_book_revoke_loan_confirm,Are you sure you want to return this book?
-42,catalog_book_revoke_hold_confirm,Are you sure you want to remove this reservation?
-43,catalog_book_delete_confirm,Are you sure you want to remove this book from My Books?
-44,catalog_cancel_downloading,Cancel
-45,catalog_categories,Categories
-46,catalog_detail_related,Related Books
-47,catalog_revoke_failed,The operation could not be completed.
-48,catalog_download_failed,The download could not be completed.
-49,catalog_download_failed_too_many_activations,The download could not be completed. Adobe device activations reached.
-50,catalog_download_failed_account_not_active,This device has not been activated. Go to account settings to activate.
-51,catalog_download_failed_loan_limit_reached,Book loan limit reached.
-52,catalog_download_failed_unsupported_pdf,"This book is an Adobe PDF, which is not supported."
-53,catalog_download_failed_unsupported_unknown,This book is of an unknown type and is not supported.
-54,catalog_download_failed_unsupported_passhash,Passhash protected books are not supported.
-55,catalog_downloading,Downloading
-56,catalog_empty_feed,No results found.
-57,catalog_empty_my_books,Visit the Catalog to\nadd books to My Books.
-58,catalog_meta_corrupt,The metadata for this book is damaged! Please sync your account to fix it.
-59,catalog_meta_corrupt_title,Metadata damaged
-60,catalog_publication_date,Published
-61,catalog_publisher,Publisher
-62,catalog_refresh,Refresh Feed
-63,catalog_search,Search
-64,catalog_unknown_feed,Unknown
-65,catalog_more_feed,More
-66,catalog_requesting_loan,Requesting
-67,catalog_requesting_revoke,Requesting
-68,catalog_added_for_later_download,Added to My Books for downloading later.
-71,catalog_book_borrow,Get
-72,catalog_book_reserve,Reserve
-73,catalog_book_read,Read
-74,catalog_book_error_dismiss,Dismiss
-75,catalog_book_error_retry,Retry
-76,catalog_book_error_retry_now,Retry Now
-77,catalog_book_error_download_later,Download Later
-78,catalog_book_sync,Sync
-79,catalog_book_download,Download
-80,catalog_book_add,Add to My Books
-81,catalog_book_delete,Remove
-82,catalog_book_revoke_loan,Return Now
-83,catalog_book_revoke_hold,Remove
-84,catalog_book_report,Report Issue
-85,catalog_book_distribution,Distributed by: %s
-86,catalog_book_revoke_cancel,Cancel
-88,catalog_book_availability_loaned_indefinite,You have this book on loan.
-89,catalog_book_availability_loaned_timed,You have this book on loan for %s.
-90,catalog_book_availability_open_access,This book is yours to keep.
-91,catalog_book_availability_held_indefinite,You have this book on hold.
-92,catalog_book_availability_held_timed,You will be able to borrow this book in %s.
-93,catalog_book_availability_held_queue,You are at position %d in the queue for this book.
-94,catalog_book_availability_reserved_timed,Your reservation expires in %s.
-95,catalog_book_availability_reserved_indefinite,You have this book reserved.
-96,catalog_book_availability_loanable,This book is available for loan.
-97,catalog_book_availability_holdable,All copies of this book are currently on loan.
-98,catalog_book_availability_revoked,This book is waiting to be returned.
-99,catalog_book_interval_days,days
-100,catalog_book_interval_hours,hours
-101,catalog_book_interval_sub_hour,less than an hour
-102,catalog_book_interval_years_short,y
-103,catalog_book_interval_months_short,m
-104,catalog_book_interval_weeks_short,w
-105,catalog_book_interval_days_short,d
-106,catalog_book_interval_hours_short,h
-108,catalog_book_summary_publisher,Book Publisher
-111,catalog_book_report_wrong_genre,Wrong Genre
-112,catalog_book_report_wrong_audience,Wrong Audience
-113,catalog_book_report_wrong_age_range,Wrong Age Range
-114,catalog_book_report_wrong_title,Wrong Title
-115,catalog_book_report_wrong_medium,Wrong Medium
-116,catalog_book_report_wrong_author,Wrong Author
-117,catalog_book_report_wrong_cover_image,Wrong/Missing Cover Image
-118,catalog_book_report_wrong_description,Wrong/Mismatched Description
-119,catalog_book_report_cant_download,Can\'t Download
-120,catalog_book_report_cant_borrow,Can\'t Borrow
-121,catalog_book_report_incorrect_contents,Book Contents Blank or Incorrect
-123,catalog_book_report_cancel,Cancel
-124,catalog_book_report_submit,Submit
-127,help,Frequently Asked Questions
-130,library_signup_title,Sign Up for a Library Card
-133,location_no_valid_address,No valid address found
-136,settings,About
-137,settings_login_title,Library Card
-138,settings_barcode,Barcode
-139,settings_pin,PIN
-140,settings_name,Name
-141,settings_screen_Lock_not_setup,"""Secure lock screen hasn't been set up. Go to 'Settings -> Security -> Screenlock' to set up a lock screen"""
-142,settings_log_in_cancel,Cancel
-143,settings_log_in,Log In
-144,settings_log_out,Log Out
-145,settings_authentication_title,Authentication
-146,settings_device_title,Device
-147,settings_activate_this_device,Activate this Device
-148,settings_deactivate_this_device,Deactivate this Device
-149,settings_log_out_cancel,Cancel
-150,settings_login_succeeded,Logged in successfully
-151,settings_logout_succeeded,Logged out successfully
-152,settings_login_failed,Login Failed
-153,settings_login_failed_credentials,Your barcode and pin combination was not valid. Please try again.
-154,settings_login_failed_server,An unknown error occurred. Please check your connection or try again later.
-155,settings_logout_failed_server,An unknown error occurred. Please check your connection or try again later.
-156,settings_login_failed_device,An error occurred when activating your device. Please check your connection or try again later.
-157,settings_login_failed_adobe_device_limit,Too many devices have been registered on this account. Please contact Adobe support for assistance.
-158,settings_login_failed_adobe_device_bad_clock,An error occurred when activating your device. Please check that your device clock is set to the correct time.
-159,settings_logout_failed,Logout Failed
-160,settings_feedback,Feedback
-161,settings_about,About SimplyE
-162,settings_account,Account
-163,settings_accounts,Accounts
-164,settings_manage_accounts,Manage Accounts
-165,settings_credits,Acknowledgements
-166,settings_eula,User Agreement
-167,settings_report_issue,Report an Issue
-168,settings_privacy,Privacy Policy
-169,settings_licences,Licenses
-170,settings_licence_software,Software License
-171,settings_licence_content,Content License
-172,settings_logout_confirm,"If you sign out of your account, all content will be removed from this device."
-173,settings_adobe_accounts,Adobe Accounts
-174,settings_alt_uris,Alternate URIs
-175,settings_reveal_password,Show PIN
-176,settings_application_version,Application Version
-178,login_needed,You need to login to access the collection.
-179,login_with_barcode,Login with Barcode
-180,login_with_clever,Login with Clever
-181,request_new_codes,Request New Code
-183,navigation_accessibility,Navigation
-184,navigation_accessibility_drawer_show,Show navigation drawer. button.
-185,navigation_accessibility_drawer_hide,Hide navigation drawer. button.
-188,settings_accessibility_log_in_cancel,Cancel login
-189,settings_accessibility_log_in,Log in
-190,settings_accessibility_log_out_cancel,Cancel logout
-191,settings_accessibility_log_out,Log out
-193,catalog_accessibility_book_borrow,Get Button
-194,catalog_accessibility_book_reserve,Reserve Button
-195,catalog_accessibility_book_read,Read Button
-196,catalog_accessibility_book_error_dismiss,Dismiss Button
-197,catalog_accessibility_book_error_retry,Retry Button
-198,catalog_accessibility_book_sync,Sync Button
-199,catalog_accessibility_book_download,Download Button
-200,catalog_accessibility_book_add,Add to My Books Button
-201,catalog_accessibility_book_delete,Remove Button
-202,catalog_accessibility_book_revoke_loan,Return Now Button
-203,catalog_accessibility_book_revoke_hold,Remove Button
-204,catalog_accessibility_book_revoke_loan_cancel,Cancel Return Now
-205,catalog_accessibility_book_revoke_hold_cancel,Cancel Remove
-206,catalog_accessibility_header_show_more,show more in %1$s
-209,reader,Reader
-210,reader_toc,Table Of Contents
-211,reader_error_book_database,There was a problem with the book database.
-212,reader_error_account_database,There was a problem with the accounts database.
-213,reader_error_epub_error,The given EPUB file could not be loaded.
-214,reader_error_epub_missing,The given EPUB file appears to be missing and therefore cannot be loaded.
-215,reader_error_general,An error occurred whilst trying to set up the reader.
-218,reader_accessibility_toc,Show table of contents
-219,reader_accessibility_toc_back,Close the table of contents without selecting an item
-220,reader_accessibility_settings,Show reader settings
-221,reader_accessibility_close,Close the book
-222,reader_accessibility_media_previous,Go to previous media item
-223,reader_accessibility_media_next,Go to next media item
-224,reader_accessibility_media_play,Play or pause current media item
-226,reader_accessibility_settings_sans_font,Sans font
-227,reader_accessibility_settings_serif_font,Serif font
-228,reader_accessibility_settings_open_dyslexic_font,Open dyslexic font
-229,reader_accessibility_settings_white_on_black_text,White on black text
-230,reader_accessibility_settings_black_on_sepia_text,Black on sepia text
-231,reader_accessibility_settings_black_on_white_text,Black on white text
-232,reader_accessibility_settings_decrease_font_size,Decrease font size
-233,reader_accessibility_settings_increase_font_size,Increase font size
-234,reader_accessibility_settings_brightness_slider,Brightness slider
-235,reader_accessibility_settings_close,Close reader settings
-236,reader_settings_close,Close
-239,welcome_library_header,Read E-Books from Your Library
-240,welcome_library_subtext,"Simply browse, borrow, and read free e-books from your local library."
-241,welcome_library_button,Find Your Library
-242,welcome_instant_header,SimplyE Collection
-243,welcome_instant_subtext,E-books free to download and read without a library card.
-244,welcome_instant_button,Read Now
-247,need_card_question,Don\'t have a library card?
-248,need_card_button,Sign Up
-249,need_card_create,Create Card
-252,profiles_title,Profiles
-253,profiles_select,Please select an existing profile or create a new one.
-254,profiles_create,Create
-255,profiles_modify,Change
-256,profiles_please_enter,"Please enter your name, gender, and date of birth."
-257,profiles_name_field,Name
-258,profiles_gender_male,Male
-259,profiles_gender_female,Female
-260,profiles_gender_non_binary,Non-binary
-261,profiles_selection_error_general,An error occurred whilst trying to select your profile.
-262,profiles_creation_error_name_already_used,That name has already been used. Please pick another.
-263,profiles_creation_error_general,An error occurred whilst trying to create your profile.
-264,profiles_account_selection_error_general,An error occurred whilst trying to select an account.
-265,profiles_account_creation_error_general,An error occurred whilst trying to create the account.
-266,profiles_account_deletion_error_general,An error occurred whilst trying to delete the account.
-267,profiles_switch,Switch Profile
-268,profiles_switch_confirm,Are you sure you want to switch profiles?
-269,profiles_delete_confirm,Are you sure you want to delete this profile?
-270,profiles_delete,Delete Profile
-271,profiles_delete_button,Delete
-272,profiles_cancel_button,Cancel
-273,profiles_time_out_soon,The current profile will soon be logged out due to inactivity. Please touch the screen if you want to stay logged in.
-274,profiles_time_out_soon_title,Profile Inactivity
-275,versions_revision,Build
-276,versions_version,Version
-277,profiles_deletion_error,An error occurred whilst trying to delete the profile.
-278,profiles_role_parent,Parent
-279,profiles_role_teacher,Teacher
-280,profiles_role_student,Student
-281,profiles_role_other,Other
-282,profiles_ask_name,What is your name?
-283,profiles_ask_gender,What is your gender?
-284,profiles_gender_other,Other
-285,profiles_ask_birth,What is your date of birth?
-286,profiles_ask_role,Are you a ..?
-287,profiles_ask_pilot_school,Is your school in an eLibrary pilot program?
-288,profiles_create_title,Create A Profile
-289,profiles_modify_title,Modify A Profile
-290,profiles_pilot_no,No
-291,profiles_pilot_yes,"Yes, my school is:"
-292,profiles_ask_grade,What is your school grade?
+Module,File,ID,English
+one.lfa.android.services,strings.xml,appName,LFA
+one.lfa.android.services,stringsProfile.xml,profileAccountCreationErrorGeneral,An error occurred whilst trying to create the account.
+one.lfa.android.services,stringsProfile.xml,profileAccountDeletionErrorGeneral,An error occurred whilst trying to delete the account.
+one.lfa.android.services,stringsProfile.xml,profileAccountSelectionErrorGeneral,An error occurred whilst trying to select an account.
+one.lfa.android.services,stringsProfile.xml,profileAskBirth,What is your date of birth?
+one.lfa.android.services,stringsProfile.xml,profileAskGender,What is your gender?
+one.lfa.android.services,stringsProfile.xml,profileAskGrade,What is your school grade?
+one.lfa.android.services,stringsProfile.xml,profileAskName,What is your name?
+one.lfa.android.services,stringsProfile.xml,profileAskPilotSchool,Is your school in an eLibrary pilot program?
+one.lfa.android.services,stringsProfile.xml,profileAskRole,Are you a ..?
+one.lfa.android.services,stringsProfile.xml,profileCancelButton,Cancel
+one.lfa.android.services,stringsProfile.xml,profileCreateTitle,Create A Profile
+one.lfa.android.services,stringsProfile.xml,profileDeleteButton,Delete
+one.lfa.android.services,stringsProfile.xml,profileDeleteConfirm,Are you sure you want to delete this profile?
+one.lfa.android.services,stringsProfile.xml,profileGenderFemale,Female
+one.lfa.android.services,stringsProfile.xml,profileGenderMale,Male
+one.lfa.android.services,stringsProfile.xml,profileGenderNonBinary,Non-binary
+one.lfa.android.services,stringsProfile.xml,profileGenderOther,Other
+one.lfa.android.services,stringsProfile.xml,profileModifyTitle,Modify A Profile
+one.lfa.android.services,stringsProfile.xml,profileNameFirstField,First Name
+one.lfa.android.services,stringsProfile.xml,profileNameLastField,Last Name
+one.lfa.android.services,stringsProfile.xml,profilePilotNo,No
+one.lfa.android.services,stringsProfile.xml,profilePilotYes,"Yes, my school is:"
+one.lfa.android.services,stringsProfile.xml,profilePleaseEnter,"Please enter your name, gender, and date of birth."
+one.lfa.android.services,stringsProfile.xml,profileRoleOther,Other
+one.lfa.android.services,stringsProfile.xml,profileRoleParent,Parent
+one.lfa.android.services,stringsProfile.xml,profileRoleStudent,Student
+one.lfa.android.services,stringsProfile.xml,profileRoleTeacher,Teacher
+one.lfa.android.services,stringsProfile.xml,profileSelectionErrorGeneral,An error occurred whilst trying to select your profile.
+one.lfa.android.services,stringsProfile.xml,profileSwitch,Log Out
+one.lfa.android.services,stringsProfile.xml,profileSwitchConfirm,Are you sure you want to log out?
+simplified-accounts-source-spi,strings.xml,resolving,Resolving the account provider…
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocument,Resolving the authentication document…
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentCOPPAAgeGateMalformed,The description of the COPPA age gate must specify Over-13 and Under-13 URIs.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentMissingURI,No URI was provided for an authentication document.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentNoStartURI,The authentication document did not provide a starting catalog URI.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentNoUsableAuthenticationTypes,The account did not specify an authentication type that we can understand.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentOAuthMalformed,The description of an OAuth system must contain an authentication URI.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentParseFailed,The authentication document was malformed and could not be parsed.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentRetrievalFailed,The authentication document could not be retrieved from the server.
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentRetrievalFailedWithProblem,"
+The authentication document could not be retrieved from the server.
+
+  "
+simplified-accounts-source-spi,strings.xml,resolvingAuthDocumentUnusableLink,We couldn\'t understand the authentication document link.
+simplified-accounts-source-spi,strings.xml,resolvingUnexpectedException,Received an unexpected exception during resolution!
+simplified-cardcreator,strings.xml,account_information,Account Information
+simplified-cardcreator,strings.xml,age_description,"To obtain a digital library card from the New York Public Library, you must live, work, or attend school in New York State. You must also be at least 13 years of age and be physically present in New York at the time of sign-up.  \n\nYou must be 13 years of age or older to sign up for a library card. How old are you?"
+simplified-cardcreator,strings.xml,age_error,You are not old enough to sign up for a library card.
+simplified-cardcreator,strings.xml,birth_date,BIRTH DATE
+simplified-cardcreator,strings.xml,cancel,Cancel
+simplified-cardcreator,strings.xml,card_saved,card saved
+simplified-cardcreator,strings.xml,check_location_again,Check location again
+simplified-cardcreator,strings.xml,checking_location,Checking location
+simplified-cardcreator,strings.xml,city,City
+simplified-cardcreator,strings.xml,confirm,Confirm
+simplified-cardcreator,strings.xml,confirm_address,Confirm Address
+simplified-cardcreator,strings.xml,confirm_address_subheader,Tap confirm if this looks correct or previous to edit.
+simplified-cardcreator,strings.xml,confirm_home_address,Confirm Home Address
+simplified-cardcreator,strings.xml,confirm_school_address,Confirm School Address
+simplified-cardcreator,strings.xml,confirm_work_address,Confirm Work Address
+simplified-cardcreator,strings.xml,confirmation,Confirmation
+simplified-cardcreator,strings.xml,create_card,Create Card
+simplified-cardcreator,strings.xml,create_card_error,There was an error creating your card\n
+simplified-cardcreator,strings.xml,create_card_general_error,There was an error creating your card.
+simplified-cardcreator,strings.xml,create_child_card,Create Card for your Child
+simplified-cardcreator,strings.xml,creating_card,Creating card
+simplified-cardcreator,strings.xml,done,Done
+simplified-cardcreator,strings.xml,email,Email
+simplified-cardcreator,strings.xml,enter_birth_date_warning,Please enter a valid birthdate
+simplified-cardcreator,strings.xml,eula_checkbox,I agree to the terms of the End User License Agreement.
+simplified-cardcreator,strings.xml,first_name,FIRST NAME
+simplified-cardcreator,strings.xml,home_address,Home Address
+simplified-cardcreator,strings.xml,issued_date,Issued: %1$s
+simplified-cardcreator,strings.xml,juvenile_policy,"To apply for a card for your under-13 child, you must be the parent/legal guardian of the minor in question and be physically present in New York State at the time of sign-up.\n\n
+    Please check the box below to confirm you are the legal guardian of the minor child for whom the card will be used."
+simplified-cardcreator,strings.xml,juvenile_policy_checkbox,"By checking this box, I confirm that I am the parent / legal guardian of the minor for whom I am creating a library card account."
+simplified-cardcreator,strings.xml,last_name,LAST NAME
+simplified-cardcreator,strings.xml,legal_disclaimer,I have read and agree to the End User License Agreement and the Legal Disclaimer.
+simplified-cardcreator,strings.xml,location,Location
+simplified-cardcreator,strings.xml,location_access_error,"SimplyE cannot access your device\'s location, configure your location settings to continue."
+simplified-cardcreator,strings.xml,location_check,Location Check
+simplified-cardcreator,strings.xml,location_error,You must be in New York to sign up for a library card. Please try to sign up again when you are in another location.
+simplified-cardcreator,strings.xml,location_permission_prompt,SimplyE needs access to you location in order to create a library card.
+simplified-cardcreator,strings.xml,middle_name,MIDDLE NAME
+simplified-cardcreator,strings.xml,name,Name
+simplified-cardcreator,strings.xml,new_york_success,We have successfully determined that you are in New York!
+simplified-cardcreator,strings.xml,next,Next
+simplified-cardcreator,strings.xml,nypl_logo,NYPL Logo
+simplified-cardcreator,strings.xml,optional,Optional
+simplified-cardcreator,strings.xml,out_of_state_address,Out-of-State Address
+simplified-cardcreator,strings.xml,out_of_state_subheader,"Since you do not live in New York, you must work or attend school in New York to qualify for a library card."
+simplified-cardcreator,strings.xml,over_13,13 or Older
+simplified-cardcreator,strings.xml,personal_information,Personal Information
+simplified-cardcreator,strings.xml,pin,Pin
+simplified-cardcreator,strings.xml,previous,Prev
+simplified-cardcreator,strings.xml,quit,Quit
+simplified-cardcreator,strings.xml,read_eula,I have read and agree to the End User License Agreement.
+simplified-cardcreator,strings.xml,required,Required
+simplified-cardcreator,strings.xml,review,Review
+simplified-cardcreator,strings.xml,save_card,Save Card
+simplified-cardcreator,strings.xml,school_address,School Address
+simplified-cardcreator,strings.xml,school_in_ny,I attend school in New York
+simplified-cardcreator,strings.xml,sign_up,Sign Up for a Library Card
+simplified-cardcreator,strings.xml,state,State
+simplified-cardcreator,strings.xml,street_1,Street 1
+simplified-cardcreator,strings.xml,street_2,Street 2
+simplified-cardcreator,strings.xml,try_again,Try again
+simplified-cardcreator,strings.xml,under_13,Under 13
+simplified-cardcreator,strings.xml,under_13_warning,You must be 13 years of age or older to sign up for a library card.
+simplified-cardcreator,strings.xml,user_card_number,Card Number: %1$s
+simplified-cardcreator,strings.xml,user_pin,PIN: %1$s
+simplified-cardcreator,strings.xml,username,Username
+simplified-cardcreator,strings.xml,username_desc,Usernames must be 5–25 letters or numbers only. PINs must be four digits.
+simplified-cardcreator,strings.xml,valid_address_subheader,"This valid address will result in a temporary "
+simplified-cardcreator,strings.xml,validate_address_error,There was an error validating your address\n
+simplified-cardcreator,strings.xml,validate_address_general_error,There was an error validating your address.
+simplified-cardcreator,strings.xml,validate_username_error,There was an error validating your username\n
+simplified-cardcreator,strings.xml,validate_username_general_error,There was an error validating your username.
+simplified-cardcreator,strings.xml,validating_location,Validating your location
+simplified-cardcreator,strings.xml,validating_username,Validating username
+simplified-cardcreator,strings.xml,work_address,Work Address
+simplified-cardcreator,strings.xml,work_in_ny,I work in New York
+simplified-cardcreator,strings.xml,your_address,Your Address:
+simplified-cardcreator,strings.xml,zip,Zip
+simplified-main,stringsBoot.xml,bootFailedGeneric,We found a problem. Please check your connection or close and reopen the app to retry.
+simplified-main,stringsBoot.xml,bootStarted,Starting application…
+simplified-main,stringsBoot.xml,bootingAccountProviders,Initializing account providers…
+simplified-main,stringsBoot.xml,bootingAdobeDRM,Starting Adobe DRM…
+simplified-main,stringsBoot.xml,bootingAnalytics,Starting analytics…
+simplified-main,stringsBoot.xml,bootingAudioBookExtensions,Starting Audio Book extensions…
+simplified-main,stringsBoot.xml,bootingAudioBookManifestStrategiesService,Initializing Audio Book manifest strategy service…
+simplified-main,stringsBoot.xml,bootingAuthenticationDocumentParsers,Initializing authentication document parsers…
+simplified-main,stringsBoot.xml,bootingBookController,Initializing book controller…
+simplified-main,stringsBoot.xml,bootingBookFormatSupport,Starting book format support…
+simplified-main,stringsBoot.xml,bootingBookRegistry,Starting book registry…
+simplified-main,stringsBoot.xml,bootingBrandingServices,Initializing branding services…
+simplified-main,stringsBoot.xml,bootingBuildConfigurationService,Initializing build configuration service…
+simplified-main,stringsBoot.xml,bootingBundledContent,Initializing bundled content…
+simplified-main,stringsBoot.xml,bootingBundledCredentials,Initializing bundled credentials…
+simplified-main,stringsBoot.xml,bootingCardCreatorService,Initializing Card Creator Service…
+simplified-main,stringsBoot.xml,bootingCatalogConfigurationService,Initializing catalog configuration…
+simplified-main,stringsBoot.xml,bootingClock,Initializing clock…
+simplified-main,stringsBoot.xml,bootingCompleted,Startup completed!
+simplified-main,stringsBoot.xml,bootingCoverBadgeProvider,Starting cover badge provider…
+simplified-main,stringsBoot.xml,bootingCoverGenerator,Starting cover generator…
+simplified-main,stringsBoot.xml,bootingCoverProvider,Starting cover provider…
+simplified-main,stringsBoot.xml,bootingCredentialStore,Initializing credential store…
+simplified-main,stringsBoot.xml,bootingDirectories,Initializing directories…
+simplified-main,stringsBoot.xml,bootingDocumentStore,Initializing document store…
+simplified-main,stringsBoot.xml,bootingDownloadService,Starting download service…
+simplified-main,stringsBoot.xml,bootingEPUBLoader,Starting EPUB loader…
+simplified-main,stringsBoot.xml,bootingFeedLoader,Starting OPDS feed loader…
+simplified-main,stringsBoot.xml,bootingFeedParser,Starting OPDS feed parser…
+simplified-main,stringsBoot.xml,bootingFeedbooksSecretService,Initializing Feedbooks secret service…
+simplified-main,stringsBoot.xml,bootingHTTP,Starting HTTP client…
+simplified-main,stringsBoot.xml,bootingHTTPServer,Booting HTTP server…
+simplified-main,stringsBoot.xml,bootingIdleTimerConfigurationService,Initializing idle timer configuration…
+simplified-main,stringsBoot.xml,bootingInstabug,Initializing Instabug…
+simplified-main,stringsBoot.xml,bootingLocalImageLoader,Starting local image loader…
+simplified-main,stringsBoot.xml,bootingNetworkConnectivity,Initializing network connectivity monitor…
+simplified-main,stringsBoot.xml,bootingNotificationsService,Initializing Notifications Service…
+simplified-main,stringsBoot.xml,bootingOverdriveSecretService,Initializing Overdrive secret service…
+simplified-main,stringsBoot.xml,bootingPatronProfileParsers,Initializing patron profile parsers…
+simplified-main,stringsBoot.xml,bootingProfileModificationFragmentService,Initializing profile modification fragment service…
+simplified-main,stringsBoot.xml,bootingProfileTimer,Initializing profile idle timer…
+simplified-main,stringsBoot.xml,bootingProfilesDatabase,Initializing profiles database…
+simplified-main,stringsBoot.xml,bootingReaderBookmarkService,Starting reader bookmark service…
+simplified-main,stringsBoot.xml,bootingScreenSize,Starting screen size…
+simplified-main,stringsBoot.xml,bootingSettingsConfigurationService,Initializing settings configuration…
+simplified-main,stringsBoot.xml,bootingStrings,Initializing %1$s strings…
+simplified-main,stringsBoot.xml,bootingTenPrint,Booting TenPrint…
+simplified-main,stringsBoot.xml,bootingThemeService,Initializing theme service…
+simplified-main,stringsBoot.xml,bootingUIBackgroundExecutor,Initializing UI background executor…
+simplified-main,stringsBoot.xml,bootingUIThreadService,Initializing UI thread service…
+simplified-main,stringsLogin.xml,loginAuthRequired,Authentication is required. Continuing…
+simplified-main,stringsLogin.xml,loginCheckingAuthenticationRequirement,Checking authentication requirement…
+simplified-main,stringsLogin.xml,loginDeviceActivated,Device activated
+simplified-main,stringsLogin.xml,loginDeviceActivating,Attempting to activate device…
+simplified-main,stringsLogin.xml,loginDeviceActivationFailed,Device activation failed: %1$s (%2$s)
+simplified-main,stringsLogin.xml,loginDeviceActivationPostDeviceManager,Contacting device manager…
+simplified-main,stringsLogin.xml,loginDeviceActivationPostDeviceManagerDone,Posted to device manager URI.
+simplified-main,stringsLogin.xml,loginDeviceDRMNotSupported,"This account requires Adobe ACS DRM, but this version of the application does not support it."
+simplified-main,stringsLogin.xml,loginErrorAuthNotRequired,Authentication is not required!
+simplified-main,stringsLogin.xml,loginErrorConnectionFailed,A network error occurred. Please check your connection or try again later.
+simplified-main,stringsLogin.xml,loginErrorInvalidCredentials,Your login is incorrect. Please try again.
+simplified-main,stringsLogin.xml,loginErrorNoPatronURI,No patron settings URI is defined!
+simplified-main,stringsLogin.xml,loginErrorPatronSettingsParseError,Could not parse patron settings returned by server!
+simplified-main,stringsLogin.xml,loginErrorServer,Server returned an error: %1$d %2$s
+simplified-main,stringsLogin.xml,loginPatronSettingsOK,Received patron settings
+simplified-main,stringsLogin.xml,loginPatronSettingsRequesting,Requesting patron settings…
+simplified-main,stringsLogout.xml,logoutClearingBookDatabase,Clearing the book database…
+simplified-main,stringsLogout.xml,logoutClearingBookDatabaseFailed,Clearing the book database failed!
+simplified-main,stringsLogout.xml,logoutClearingBookRegistry,Clearing the book registry…
+simplified-main,stringsLogout.xml,logoutClearingBookRegistryFailed,Clearing the book registry failed!
+simplified-main,stringsLogout.xml,logoutDeactivatingDeviceAdobe,Deactivating device…
+simplified-main,stringsLogout.xml,logoutDeactivatingDeviceAdobeDeactivated,Deactivated device.
+simplified-main,stringsLogout.xml,logoutDeactivatingDeviceAdobeFailed,Deactivating the device failed: %1$s (%2$s)
+simplified-main,stringsLogout.xml,logoutDeactivatingDeviceAdobeNotActive,Device does not appear to be activated.
+simplified-main,stringsLogout.xml,logoutDeactivatingDeviceAdobeUnsupported,Adobe ACS DRM is not supported in this version of the application.
+simplified-main,stringsLogout.xml,logoutDeviceDeactivationPostDeviceManager,Contacting device manager…
+simplified-main,stringsLogout.xml,logoutDeviceDeactivationPostDeviceManagerFinished,Posted to device manager URI.
+simplified-main,stringsLogout.xml,logoutNotLoggedIn,Account does not appear to be logged in!
+simplified-main,stringsLogout.xml,logoutStarted,Logging out…
+simplified-main,stringsNotifications.xml,notification_channel_description,Notifications related to items becoming available for checkout.
+simplified-main,stringsNotifications.xml,notification_channel_name,Item Available
+simplified-main,stringsNotifications.xml,notification_title_ready_content,The title you reserved is available.
+simplified-main,stringsNotifications.xml,notification_title_ready_title,Your book is ready
+simplified-main,stringsProfiles.xml,profileAccountCreatingAnAccountProviderDescription,Creating an account provider description…
+simplified-main,stringsProfiles.xml,profileAccountCreationCreatingAccount,Creating an account…
+simplified-main,stringsProfiles.xml,profileAccountCreationCreatingAccountFailed,Creating an account failed.
+simplified-main,stringsProfiles.xml,profileAccountCreationResolvingAccountProvider,Resolving account provider…
+simplified-main,stringsProfiles.xml,profileAccountCreationResolvingAccountProviderFailed,Resolving an account provider failed.
+simplified-main,stringsProfiles.xml,profileAccountCreationSucceeded,Creating the account succeeded.
+simplified-main,stringsProfiles.xml,profileAccountDeleting,Deleting account…
+simplified-main,stringsProfiles.xml,profileAccountDeletionFailed,Deleting an account failed.
+simplified-main,stringsProfiles.xml,profileAccountDeletionOnlyOneAccountRemaining,Cannot delete the one remaining account; at least one account must be present.
+simplified-main,stringsProfiles.xml,profileAccountDeletionSucceeded,Deleting an account succeeded.
+simplified-main,stringsProfiles.xml,profileAccountFetchingOPDSFeed,Fetching an OPDS feed…
+simplified-main,stringsProfiles.xml,profileAccountFetchingOPDSFeedFailed,Fetching an OPDS feed failed!
+simplified-main,stringsProfiles.xml,profileAccountFindingAuthDocumentURI,Finding an authentication document URI…
+simplified-main,stringsProfiles.xml,profileAccountParsingOPDSFeed,Parsing an OPDS feed…
+simplified-main,stringsProfiles.xml,profileAccountParsingOPDSFeedFailed,Parsing an OPDS feed failed!
+simplified-main,stringsProfiles.xml,profileAccountSearchingFeedForAuthenticationDocument,Searching feed for authentication document…
+simplified-main,stringsBookRevoke.xml,revokeACSDeleteRights,Deleting Adobe ACS rights information…
+simplified-main,stringsBookRevoke.xml,revokeACSDeleteRightsFailed,Failed to delete Adobe ACS rights information.
+simplified-main,stringsBookRevoke.xml,revokeACSExecute,Executing Adobe ACS revocation commands…
+simplified-main,stringsBookRevoke.xml,revokeACSExecuteOK,Executed Adobe ACS revocation commands successfully.
+simplified-main,stringsBookRevoke.xml,revokeACSGettingDeviceCredentials,Retrieving Adobe ACS device credentials…
+simplified-main,stringsBookRevoke.xml,revokeACSGettingDeviceCredentialsNotActivated,Adobe ACS device is not activated.
+simplified-main,stringsBookRevoke.xml,revokeACSGettingDeviceCredentialsOK,Retrieved Adobe ACS device credentials.
+simplified-main,stringsBookRevoke.xml,revokeACSLoan,Revoking loan via Adobe ACS…
+simplified-main,stringsBookRevoke.xml,revokeACSLoanNotReturnable,Adobe ACS believes that this loan is not returnable.
+simplified-main,stringsBookRevoke.xml,revokeACSLoanNotSupported,Adobe ACS is not supported.
+simplified-main,stringsBookRevoke.xml,revokeACSTimedOut,Timed out waiting for Adobe ACS.
+simplified-main,stringsBookRevoke.xml,revokeBookACSConnectorFailed,Adobe ACS commands failed with error code %1$s.
+simplified-main,stringsBookRevoke.xml,revokeBookACSFailed,Executing Adobe ACS commands failed with an exception.
+simplified-main,stringsBookRevoke.xml,revokeBookCancelled,Revocation was cancelled.
+simplified-main,stringsBookRevoke.xml,revokeBookDatabaseLookup,Opening book database entry…
+simplified-main,stringsBookRevoke.xml,revokeBookDatabaseLookupFailed,Failed to open the book database entry.
+simplified-main,stringsBookRevoke.xml,revokeBookDatabaseLookupOK,Opened book database entry successfully.
+simplified-main,stringsBookRevoke.xml,revokeCredentialsRequired,"Credentials are required, but none were provided."
+simplified-main,stringsBookRevoke.xml,revokeDeleteBook,Deleting book database entry.
+simplified-main,stringsBookRevoke.xml,revokeDeleteBookFailed,Failed to delete the book database entry.
+simplified-main,stringsBookRevoke.xml,revokeFormat,Performing format-specific revocation…
+simplified-main,stringsBookRevoke.xml,revokeFormatNothingToDo,No specific operations needed for this format.
+simplified-main,stringsBookRevoke.xml,revokeFormatSpecific,Performing revocation for format %1$s…
+simplified-main,stringsBookRevoke.xml,revokeNotRevocable,The book is not revocable!
+simplified-main,stringsBookRevoke.xml,revokeServerNotify,Notifying server of revocation…
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyFeedCorrupt,Server returned a feed with a corrupted entry.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyFeedEmpty,Server returned an empty revocation feed.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyFeedFailed,Failed to process server revocation feed.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyFeedOK,Successfully processed server revocation feed.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyFeedTimedOut,Timed out waiting for server revocation feed.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyFeedWithGroups,Server returned a revocation feed with groups.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyNoURI,No URI was provided for server notification.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyNotRevocable,A loan with availability %1$s is not revocable.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyProcessingFeed,Processing server revocation feed…
+simplified-main,stringsBookRevoke.xml,revokeServerNotifySavingEntry,Saving revocation feed entry…
+simplified-main,stringsBookRevoke.xml,revokeServerNotifySavingEntryFailed,Failed to save the server revocation feed.
+simplified-main,stringsBookRevoke.xml,revokeServerNotifyURI,Notifying the server via %1$s.
+simplified-main,stringsBookRevoke.xml,revokeStarted,Revocation started…
+simplified-main,stringsMisc.xml,unexpectedException,An unexpected exception occurred.
+simplified-migration-from3master,strings.xml,errorAccountAuthenticationFailure,"Failed to authenticate account \""%1$s\""."
+simplified-migration-from3master,strings.xml,errorAccountAuthenticationNoCredentials,"Credentials are required to authenticate account \""%1$s\"", but none were available. It will be necessary to log in manually."
+simplified-migration-from3master,strings.xml,errorAccountLoadFailure,Could not load the existing account with ID %1$d
+simplified-migration-from3master,strings.xml,errorBookAdobeDRMCopyFailure,"Failed to copy Adobe DRM rights information for book \""%1$s\""."
+simplified-migration-from3master,strings.xml,errorBookCopyFailure,"Failed to copy book \""%1$s\"" to new database."
+simplified-migration-from3master,strings.xml,errorBookLoadFailure,Could not load book %1$s.
+simplified-migration-from3master,strings.xml,errorBookLoadTitledFailure,"Could not load book \""%1$s\""."
+simplified-migration-from3master,strings.xml,errorBookmarksCopyFailure,"Failed to copy bookmarks for book \""%1$s\""."
+simplified-migration-from3master,strings.xml,errorBookmarksParseFailure,"Could not parse a bookmark for book \""%1$s\""."
+simplified-migration-from3master,strings.xml,errorUnexpectedFormat,Book %1$s is of an unexpected format (%2$s).
+simplified-migration-from3master,strings.xml,errorUnknownAccountProvider,Found an account with an unrecognized ID: %1$d. It cannot be migrated.
+simplified-migration-from3master,strings.xml,progressLoadingAccount,Attempting to load account %1$d.
+simplified-migration-from3master,strings.xml,reportCopiedBook,"Migrated book \""%1$s\"""
+simplified-migration-from3master,strings.xml,reportCopiedBookmarks,"Copied %2$d bookmarks for book \""%1$s\""."
+simplified-migration-from3master,strings.xml,reportCreatedAccount,"Created account \""%1$s\"""
+simplified-migration-from3master,strings.xml,successAuthenticatedAccount,"Successfully authenticated account \""%1$s\""."
+simplified-migration-from3master,strings.xml,successAuthenticatedAccountNotRequired,"The account \""%1$s\"" does not actually require credentials."
+simplified-migration-from3master,strings.xml,successDeletedOldData,Deleted old data.
+simplified-ui-accounts,strings.xml,accountAdd,Add account
+simplified-ui-accounts,strings.xml,accountCOPPADeleteBooks,Delete books?
+simplified-ui-accounts,strings.xml,accountCOPPADeleteBooksConfirm,Changing your age will remove all books downloaded from the current account.
+simplified-ui-accounts,strings.xml,accountCOPPAOver13,I am over 13
+simplified-ui-accounts,strings.xml,accountCancel,Cancel
+simplified-ui-accounts,strings.xml,accountCardCreatorLabel,Don\'t have a library card?
+simplified-ui-accounts,strings.xml,accountCardCreatorSignUp,Create Card
+simplified-ui-accounts,strings.xml,accountCreateCard,Create Card
+simplified-ui-accounts,strings.xml,accountCreationFailed,Account creation failed
+simplified-ui-accounts,strings.xml,accountCreationFailedMessage,The account could not be created.
+simplified-ui-accounts,strings.xml,accountDelete,Delete
+simplified-ui-accounts,strings.xml,accountEULAStatement,I agree to the terms of the End User License Agreement.
+simplified-ui-accounts,strings.xml,accountLogin,Log in
+simplified-ui-accounts,strings.xml,accountLoginAlternatives,Alternative Login Methods
+simplified-ui-accounts,strings.xml,accountLoginRequired,Please log in to continue.
+simplified-ui-accounts,strings.xml,accountLoginWith,Log in with %1$s
+simplified-ui-accounts,strings.xml,accountLogout,Log out
+simplified-ui-accounts,strings.xml,accountPassword,Password
+simplified-ui-accounts,strings.xml,accountPasswordShow,Show %1$s
+simplified-ui-accounts,strings.xml,accountPickerTitle,Switch account
+simplified-ui-accounts,strings.xml,accountPlaceholder,"Lorem ipsum dolor sit amet, probatus volutpat has at, vis adhuc iuvaret omittantur an, sadipscing conclusionemque his ad. Eam ut simul tempor. Primis consetetur appellantur vim eu, eum an iudico dolorum. Ad vis utamur honestatis, sanctus debitis referrentur an eam."
+simplified-ui-accounts,strings.xml,accountRegistryCreating,Creating an account…
+simplified-ui-accounts,strings.xml,accountRegistryEmpty,No accounts are available.
+simplified-ui-accounts,strings.xml,accountRegistryRefresh,Refresh
+simplified-ui-accounts,strings.xml,accountRegistryRetrieving,Retrieving accounts from registry…
+simplified-ui-accounts,strings.xml,accountRegistrySelect,Please select a library…
+simplified-ui-accounts,strings.xml,accountReportIssue,Report an issue…
+simplified-ui-accounts,strings.xml,accountSyncBookmarks,Sync bookmarks
+simplified-ui-accounts,strings.xml,accountUserName,User Name
+simplified-ui-accounts,strings.xml,accountWantChildCard,Want a card for your child?
+simplified-ui-accounts,strings.xml,accounts,Accounts
+simplified-ui-accounts,strings.xml,accountsDelete,@string/accountDelete
+simplified-ui-accounts,strings.xml,accountsDeleteConfirm,"Are you sure you want to remove your \""%1$s\"" account from this device?"
+simplified-ui-accounts,strings.xml,accountsDeleteConfirmTitle,Remove account?
+simplified-ui-accounts,strings.xml,accountsDeletionFailed,Account deletion failed
+simplified-ui-accounts,strings.xml,accountsDeletionFailedMessage,The account \'%1$s\' could not be deleted.
+simplified-ui-accounts,strings.xml,accountsDetails,Details
+simplified-ui-accounts,strings.xml,currentlyBrowsing,You\'re currently browsing
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookBorrow,Get Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookDelete,Delete Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookDownload,Download Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookDownloadCancel,Cancel download button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookErrorDetails,Details button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookErrorDismiss,Dismiss Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookErrorRetry,Retry Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookListen,Listen Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookRead,Read Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookReserve,Reserve Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookRevokeHold,Cancel Reservation Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookRevokeLoan,Return Now Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityBookSync,Sync Button
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityCoverAudiobook,"%1$s, audiobook, by %2$s"
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityCoverEpub,"%1$s, ebook, by %2$s"
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityCoverPdf,"%1$s, pdf, by %2$s"
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityCoverUnknownFormat,"%1$s, by %2$s"
+simplified-ui-catalog,stringsCatalog.xml,catalogAccessibilityReloadFeed,Reload feed
+simplified-ui-catalog,stringsCatalog.xml,catalogAccounts,Choose another library catalog…
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityHeldIndefinite,You have this book on hold.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityHeldQueue,You are at position %1$d in the queue for this book.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityHeldTimed,You will be able to borrow this book in %1$s.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityHoldable,All copies of this book are currently on loan.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityLoanable,This book is available for loan.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityLoanedIndefinite,You have this book on loan.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityLoanedTimed,You have this book on loan for %1$s.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityOpenAccess,This book is yours to keep.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityReservedIndefinite,You have this book reserved.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityReservedTimed,Your reservation expires in %1$s.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookAvailabilityRevoked,This book is waiting to be returned.
+simplified-ui-catalog,stringsCatalog.xml,catalogBookCoverDescription,Book cover image
+simplified-ui-catalog,stringsCatalog.xml,catalogBookFormatAudioBook,Audiobook
+simplified-ui-catalog,stringsCatalog.xml,catalogBookFormatEPUB,eBook
+simplified-ui-catalog,stringsCatalog.xml,catalogBookFormatPDF,PDF
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalDays,days
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalDaysShort,d
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalHours,hours
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalHoursShort,h
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalMonthsShort,m
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalSubHour,less than an hour
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalWeeksShort,w
+simplified-ui-catalog,stringsCatalog.xml,catalogBookIntervalYearsShort,y
+simplified-ui-catalog,stringsCatalog.xml,catalogCancel,Cancel
+simplified-ui-catalog,stringsCatalog.xml,catalogCancelHold,Cancel Reservation
+simplified-ui-catalog,stringsCatalog.xml,catalogCancelling,Cancelling…
+simplified-ui-catalog,stringsCatalog.xml,catalogCorrupted,The metadata for this book is damaged and cannot be displayed. Reloading the feed or syncing your account might fix the problem.
+simplified-ui-catalog,stringsCatalog.xml,catalogDelete,Delete
+simplified-ui-catalog,stringsCatalog.xml,catalogDescription,Description
+simplified-ui-catalog,stringsCatalog.xml,catalogDetails,Details
+simplified-ui-catalog,stringsCatalog.xml,catalogDismiss,Dismiss
+simplified-ui-catalog,stringsCatalog.xml,catalogDownload,Download
+simplified-ui-catalog,stringsFeed.xml,catalogFeedLoading,Loading feed…
+simplified-ui-catalog,stringsCatalog.xml,catalogGet,Get
+simplified-ui-catalog,stringsCatalog.xml,catalogHoldCannotCancel,This reservation cannot be cancelled.
+simplified-ui-catalog,stringsCatalog.xml,catalogInformation,Information
+simplified-ui-catalog,stringsCatalog.xml,catalogListen,Listen
+simplified-ui-catalog,stringsCatalog.xml,catalogMetaCategories,Categories
+simplified-ui-catalog,stringsCatalog.xml,catalogMetaDistributor,Distributor
+simplified-ui-catalog,stringsCatalog.xml,catalogMetaPublicationDate,Published
+simplified-ui-catalog,stringsCatalog.xml,catalogMetaPublisher,Publisher
+simplified-ui-catalog,stringsCatalog.xml,catalogMetaUpdatedDate,Updated
+simplified-ui-catalog,stringsCatalog.xml,catalogOperationFailed,The operation could not be completed.
+simplified-ui-catalog,stringsCatalog.xml,catalogPlaceholder,"Lorem ipsum dolor sit amet, probatus volutpat has at, vis adhuc iuvaret omittantur an, sadipscing conclusionemque his ad. Eam ut simul tempor. Primis consetetur appellantur vim eu, eum an iudico dolorum. Ad vis utamur honestatis, sanctus debitis referrentur an eam."
+simplified-ui-catalog,stringsCatalog.xml,catalogRead,Read
+simplified-ui-catalog,stringsCatalog.xml,catalogRelatedBooks,Related books…
+simplified-ui-catalog,stringsCatalog.xml,catalogReload,Reload
+simplified-ui-catalog,stringsCatalog.xml,catalogReportIssue,Report issue…
+simplified-ui-catalog,stringsCatalog.xml,catalogRequesting,Requesting…
+simplified-ui-catalog,stringsCatalog.xml,catalogReserve,Reserve
+simplified-ui-catalog,stringsCatalog.xml,catalogRetry,Retry
+simplified-ui-catalog,stringsCatalog.xml,catalogReturn,Return
+simplified-ui-catalog,stringsCatalog.xml,catalogSearch,Search
+simplified-ui-catalog,stringsCatalog.xml,catalogSearchIn,Search in %1$s…
+simplified-ui-catalog,stringsFeed.xml,feedByAuthor,Author
+simplified-ui-catalog,stringsFeed.xml,feedByTitle,Title
+simplified-ui-catalog,stringsFeed.xml,feedCOPPAOver13,13 or Older
+simplified-ui-catalog,stringsFeed.xml,feedCOPPAQuestion,You must be 13 years of age or older to download some of the books from this collection.\nHow old are you?
+simplified-ui-catalog,stringsFeed.xml,feedCOPPAUnder13,Under 13
+simplified-ui-catalog,stringsFeed.xml,feedCollection,Collection
+simplified-ui-catalog,stringsFeed.xml,feedCollectionAll,All
+simplified-ui-catalog,stringsFeed.xml,feedDetails,@string/catalogDetails
+simplified-ui-catalog,stringsFeed.xml,feedEmpty,No results.
+simplified-ui-catalog,stringsFeed.xml,feedLoadingError,An error occurred while loading the catalog.
+simplified-ui-catalog,stringsFeed.xml,feedNavigationNotSupported,Navigation feeds are not currently supported. Sorry!
+simplified-ui-catalog,stringsFeed.xml,feedRetry,@string/catalogRetry
+simplified-ui-catalog,stringsFeed.xml,feedSortBy,Sort By
+simplified-ui-catalog,stringsFeed.xml,feedTitleBooks,Books
+simplified-ui-catalog,stringsFeed.xml,feedTitleCatalog,Catalog
+simplified-ui-catalog,stringsFeed.xml,feedTitleHolds,Holds
+simplified-ui-catalog,stringsLogin.xml,loginEULA,I agree to the terms of the End User License Agreement.
+simplified-ui-catalog,stringsLogin.xml,loginLibraryCard,Library Card
+simplified-ui-catalog,stringsLogin.xml,loginLogin,Log in
+simplified-ui-catalog,stringsLogin.xml,loginPassword,Password
+simplified-ui-catalog,stringsLogin.xml,loginUserName,User Name
+simplified-ui-errorpage,strings.xml,errorDetailsTitle,Error Details
+simplified-ui-errorpage,strings.xml,errorSendReport,Send To Support
+simplified-ui-errorpage,strings.xml,errorStepsTitle,Steps
+simplified-ui-errorpage,strings.xml,errorTitle,Here is the error log created by your issue:
+simplified-ui-navigation-tabs,strings.xml,tabBooks,Books
+simplified-ui-navigation-tabs,strings.xml,tabCatalog,Catalog
+simplified-ui-navigation-tabs,strings.xml,tabHolds,Holds
+simplified-ui-navigation-tabs,strings.xml,tabProfile,Profile
+simplified-ui-navigation-tabs,strings.xml,tabSettings,Settings
+simplified-ui-profiles,stringsProfiles.xml,profileCancel,Cancel
+simplified-ui-profiles,stringsProfiles.xml,profileCreate,Create
+simplified-ui-profiles,stringsProfiles.xml,profileCreationError,@string/profileError
+simplified-ui-profiles,stringsProfiles.xml,profileCreationErrorGeneral,An error occurred whilst trying to create your profile: %1$s
+simplified-ui-profiles,stringsProfiles.xml,profileCreationErrorNameAlreadyUsed,That name has already been used. Please pick another.
+simplified-ui-profiles,stringsProfiles.xml,profileCreationErrorNameBlank,Name cannot be blank!
+simplified-ui-profiles,stringsProfiles.xml,profileDelete,Delete
+simplified-ui-profiles,stringsProfiles.xml,profileDeleteAsk,Delete profile?
+simplified-ui-profiles,stringsProfiles.xml,profileDeleteAskMessage,Are you sure you want to delete the profile \'%1$s\'?
+simplified-ui-profiles,stringsProfiles.xml,profileDeletionError,@string/profileError
+simplified-ui-profiles,stringsProfiles.xml,profileDeletionFailedMessage,An error occurred whilst trying to delete the profile: %1$s
+simplified-ui-profiles,stringsProfiles.xml,profileError,Error
+simplified-ui-profiles,stringsProfiles.xml,profileLogOut,Log Out
+simplified-ui-profiles,stringsProfiles.xml,profileLoggedInAs,You are currently logged in as: %1$s
+simplified-ui-profiles,stringsProfiles.xml,profileModify,Modify
+simplified-ui-profiles,stringsProfiles.xml,profileName,Name
+simplified-ui-profiles,stringsProfiles.xml,profilePlaceholder,"Lorem ipsum dolor sit amet, probatus volutpat has at, vis adhuc iuvaret omittantur an, sadipscing conclusionemque his ad. Eam ut simul tempor. Primis consetetur appellantur vim eu, eum an iudico dolorum. Ad vis utamur honestatis, sanctus debitis referrentur an eam."
+simplified-ui-profiles,stringsProfiles.xml,profileSelect,"Please select a profile, or create a new one."
+simplified-ui-profiles,stringsProfiles.xml,profileTitle,Profile
+simplified-ui-profiles,stringsProfiles.xml,profileUpdateError,@string/profileError
+simplified-ui-profiles,stringsProfiles.xml,profileUpdateFailedMessage,An error occurred whilst trying to update the profile: %1$s
+simplified-ui-profiles,stringsProfiles.xml,profilesSwitch,Log Out
+simplified-ui-profiles,stringsProfiles.xml,profilesSwitchConfirm,Are you sure you want to log out?
+simplified-ui-profiles,stringsProfiles.xml,profilesTimeOutSoon,The current profile will soon be logged out due to inactivity. Please touch the screen if you want to stay logged in.
+simplified-ui-profiles,stringsProfiles.xml,profilesTimeOutSoonTitle,Profile Inactivity
+simplified-ui-profiles,stringsProfiles.xml,profilesTitle,Profiles
+simplified-ui-settings,strings.xml,settings,Settings
+simplified-ui-settings,strings.xml,settingsAbout,About
+simplified-ui-settings,strings.xml,settingsAboutSummary,"
+  "
+simplified-ui-settings,strings.xml,settingsAccountAdd,Add account…
+simplified-ui-settings,strings.xml,settingsAccountCreationFailed,Account creation failed
+simplified-ui-settings,strings.xml,settingsAccountCreationFailedMessage,The account could not be created.
+simplified-ui-settings,strings.xml,settingsAccountCurrent,Current Account
+simplified-ui-settings,strings.xml,settingsAccountDelete,@string/accountDelete
+simplified-ui-settings,strings.xml,settingsAccountDeleteConfirm,"Are you sure you want to remove your \""%1$s\"" account from this device?"
+simplified-ui-settings,strings.xml,settingsAccountDeleteConfirmTitle,Remove account?
+simplified-ui-settings,strings.xml,settingsAccountDeletionFailed,Account deletion failed
+simplified-ui-settings,strings.xml,settingsAccountDeletionFailedMessage,The account \'%1$s\' could not be deleted.
+simplified-ui-settings,strings.xml,settingsAccountOthers,Other Accounts
+simplified-ui-settings,strings.xml,settingsAccountRegistryCreating,Creating an account…
+simplified-ui-settings,strings.xml,settingsAccountRegistryEmpty,No accounts are available.
+simplified-ui-settings,strings.xml,settingsAccountRegistryRefresh,Refresh
+simplified-ui-settings,strings.xml,settingsAccountRegistryRetrieving,Retrieving accounts from registry…
+simplified-ui-settings,strings.xml,settingsAccountRegistrySelect,Please select a library…
+simplified-ui-settings,strings.xml,settingsAccounts,Accounts
+simplified-ui-settings,strings.xml,settingsAccountsSummary,"Add, remove, or configure accounts"
+simplified-ui-settings,strings.xml,settingsAcknowledgements,Acknowledgements
+simplified-ui-settings,strings.xml,settingsAcknowledgementsSummary,"
+  "
+simplified-ui-settings,strings.xml,settingsBuild,Build
+simplified-ui-settings,strings.xml,settingsBuildSummary,"
+  "
+simplified-ui-settings,strings.xml,settingsCOPPADeleteBooks,Delete books?
+simplified-ui-settings,strings.xml,settingsCOPPADeleteBooksConfirm,Changing your age will remove all books downloaded from the current account.
+simplified-ui-settings,strings.xml,settingsCOPPAOver13,I am over 13
+simplified-ui-settings,strings.xml,settingsCancel,Cancel
+simplified-ui-settings,strings.xml,settingsCardCreatorLabel,Don\'t have a library card?
+simplified-ui-settings,strings.xml,settingsCardCreatorSignUp,Sign up
+simplified-ui-settings,strings.xml,settingsCustomOPDS,Custom OPDS Feed
+simplified-ui-settings,strings.xml,settingsCustomOPDSCreate,Create
+simplified-ui-settings,strings.xml,settingsCustomOPDSInvalidURI,Not a valid URI.
+simplified-ui-settings,strings.xml,settingsCustomOPDSURL,Custom feed URL…
+simplified-ui-settings,strings.xml,settingsDebug,Debug options
+simplified-ui-settings,strings.xml,settingsDebugSummary,"
+  "
+simplified-ui-settings,strings.xml,settingsDelete,Delete
+simplified-ui-settings,strings.xml,settingsDetails,Details
+simplified-ui-settings,strings.xml,settingsDocumentation,Documentation
+simplified-ui-settings,strings.xml,settingsEULA,User agreement
+simplified-ui-settings,strings.xml,settingsEULAStatement,I agree to the terms of the End User License Agreement.
+simplified-ui-settings,strings.xml,settingsEULASummary,"
+  "
+simplified-ui-settings,strings.xml,settingsFaq,FAQ
+simplified-ui-settings,strings.xml,settingsFaqSummary,"
+  "
+simplified-ui-settings,strings.xml,settingsInfo,App info
+simplified-ui-settings,strings.xml,settingsLicense,License
+simplified-ui-settings,strings.xml,settingsLicenseSummary,Software license information
+simplified-ui-settings,strings.xml,settingsLogin,Log in
+simplified-ui-settings,strings.xml,settingsLoginAlternatives,Alternative Login Methods
+simplified-ui-settings,strings.xml,settingsLoginWith,Log in with %1$s
+simplified-ui-settings,strings.xml,settingsLogout,Log out
+simplified-ui-settings,strings.xml,settingsPassword,Password
+simplified-ui-settings,strings.xml,settingsPasswordHide,Hide password
+simplified-ui-settings,strings.xml,settingsPasswordShow,Show password
+simplified-ui-settings,strings.xml,settingsPlaceholder,"Lorem ipsum dolor sit amet, probatus volutpat has at, vis adhuc iuvaret omittantur an, sadipscing conclusionemque his ad. Eam ut simul tempor. Primis consetetur appellantur vim eu, eum an iudico dolorum. Ad vis utamur honestatis, sanctus debitis referrentur an eam."
+simplified-ui-settings,strings.xml,settingsReportIssue,Report an issue…
+simplified-ui-settings,strings.xml,settingsSyncBookmarks,Sync bookmarks
+simplified-ui-settings,strings.xml,settingsTapToDebug,Debug mode in %1$d
+simplified-ui-settings,strings.xml,settingsUserName,User Name
+simplified-ui-settings,strings.xml,settingsVersion,App version
+simplified-ui-settings,strings.xml,settingsVersionCore,Core version
+simplified-ui-settings,strings.xml,settingsVersionCoreSummary,"
+"
+simplified-ui-settings,strings.xml,settingsVersionSummary,"
+  "
+simplified-ui-splash,strings.xml,eula_agree,Agree
+simplified-ui-splash,strings.xml,eula_disagree,Disagree
+simplified-ui-splash,strings.xml,migrationFailure,There were one or more problems migrating your data
+simplified-ui-splash,strings.xml,migrationOK,OK
+simplified-ui-splash,strings.xml,migrationSendReport,Send Report
+simplified-ui-splash,strings.xml,migrationSuccess,Your data was migrated successfully!
+simplified-ui-splash,strings.xml,selectionAlternateButton,Add a Library Later
+simplified-ui-splash,strings.xml,selectionAlternateTitle,Browse the SimplyE Collection
+simplified-ui-splash,strings.xml,selectionButton,Find Your Library
+simplified-ui-splash,strings.xml,selectionTitle,Read E-Books from Your Library
+simplified-viewer-audiobook,strings.xml,audio_book_player,Audiobook Player
+simplified-viewer-audiobook,strings.xml,audio_book_player_do_keep,Keep
+simplified-viewer-audiobook,strings.xml,audio_book_player_do_return,Return
+simplified-viewer-audiobook,strings.xml,audio_book_player_error_book_open,Unable to open audio book
+simplified-viewer-audiobook,strings.xml,audio_book_player_error_engine_open,Unable to initialize audio engine
+simplified-viewer-audiobook,strings.xml,audio_book_player_return_question,Would you like to return it?
+simplified-viewer-audiobook,strings.xml,audio_book_player_return_title,Your Audiobook Has Finished
+simplified-viewer-epub-readium1,strings.xml,reader,Reader
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_bookmark,Add bookmark for this page
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_close,Close the book
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_media_next,Go to next media item
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_media_play,Play or pause current media item
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_media_previous,Go to previous media item
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings,Show reader settings
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_black_on_sepia_text,Black on sepia text
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_black_on_white_text,Black on white text
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_brightness_slider,Brightness slider
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_close,Close reader settings
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_decrease_font_size,Decrease font size
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_increase_font_size,Increase font size
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_open_dyslexic_font,Open dyslexic font
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_sans_font,Sans font
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_serif_font,Serif font
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_settings_white_on_black_text,White on black text
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_toc,Show table of contents
+simplified-viewer-epub-readium1,strings.xml,reader_accessibility_toc_back,Close the table of contents without selecting an item
+simplified-viewer-epub-readium1,strings.xml,reader_placeholder,"Lorem ipsum dolor sit amet, probatus volutpat has at, vis adhuc iuvaret omittantur an, sadipscing conclusionemque his ad. Eam ut simul tempor. Primis consetetur appellantur vim eu, eum an iudico dolorum. Ad vis utamur honestatis, sanctus debitis referrentur an eam."
+simplified-viewer-epub-readium1,strings.xml,reader_settings_close,Close
+simplified-viewer-epub-readium1,strings.xml,reader_toc,Table Of Contents
+simplified-viewer-epub-readium2,strings.xml,app_name,simplified-viewer-epub-readium2
+simplified-viewer-pdf,strings.xml,table_of_contents_empty_message,No Table of Contents available for this work
+simplified-viewer-pdf,strings.xml,table_of_contents_title,Table of Contents

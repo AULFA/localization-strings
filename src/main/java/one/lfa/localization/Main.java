@@ -1,7 +1,13 @@
+/*
+ * Copyright © 2020 Library For All
+ *
+ * Apache 2.0 license.
+ */
+
 package one.lfa.localization;
 
+import com.io7m.jaffirm.core.Preconditions;
 import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVPrinter;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;
@@ -10,12 +16,16 @@ import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.SAXParserFactory;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public final class Main
 {
@@ -24,29 +34,23 @@ public final class Main
 
   }
 
-  private static final class StringResource
-  {
-    private final int line_number;
-    private final String name;
-
-    private StringResource(
-      final int in_line_number,
-      final String in_name)
-    {
-      this.line_number = in_line_number;
-      this.name = in_name;
-    }
-  }
-
   private static final class Content implements ContentHandler
   {
-    private final CSVPrinter printer;
+    private final Path path;
+    private final Map<String, TranslatedString> strings;
     private Locator locator;
-    private Optional<StringResource> element = Optional.empty();
+    private Optional<String> id = Optional.empty();
+    private String module;
+    private String file;
 
-    Content(final CSVPrinter printer)
+    Content(
+      final Path inPath,
+      final Map<String, TranslatedString> inStrings)
     {
-      this.printer = printer;
+      this.path =
+        Objects.requireNonNull(inPath, "path");
+      this.strings =
+        Objects.requireNonNull(inStrings, "strings");
     }
 
     @Override
@@ -59,7 +63,38 @@ public final class Main
     @Override
     public void startDocument()
     {
+      this.file = this.path.getFileName().toString();
 
+      final var values = this.path.getParent();
+      Preconditions.checkPreconditionV(
+        Objects.equals(values.getFileName().toString(), "values"),
+        "Parent directory must be 'values' and not '%s'",
+        values.getFileName()
+      );
+
+      final var res = values.getParent();
+      Preconditions.checkPreconditionV(
+        Objects.equals(res.getFileName().toString(), "res"),
+        "Parent directory must be 'res' and not '%s'",
+        res.getFileName()
+      );
+
+      final var main = res.getParent();
+      Preconditions.checkPreconditionV(
+        Objects.equals(main.getFileName().toString(), "main"),
+        "Parent directory must be 'main' and not '%s'",
+        main.getFileName()
+      );
+
+      final var src = main.getParent();
+      Preconditions.checkPreconditionV(
+        Objects.equals(src.getFileName().toString(), "src"),
+        "Parent directory must be 'src' and not '%s'",
+        src.getFileName()
+      );
+
+      final var mod = src.getParent().getFileName();
+      this.module = mod.toString();
     }
 
     @Override
@@ -90,12 +125,9 @@ public final class Main
       final Attributes atts)
     {
       if (Objects.equals(localName, "string")) {
-        this.element = Optional.of(
-          new StringResource(
-            this.locator.getLineNumber(),
-            atts.getValue("name")));
+        this.id = Optional.of(atts.getValue("name"));
       } else {
-        this.element = Optional.empty();
+        this.id = Optional.empty();
       }
     }
 
@@ -115,21 +147,34 @@ public final class Main
       final int length)
       throws SAXException
     {
-      if (this.element.isPresent()) {
-        final var resource = this.element.get();
-        final var text = new String(ch, start, length);
+      if (this.id.isPresent()) {
+        final var idText =
+          this.id.get();
+        final var text =
+          textFromCharacters(ch, start, length);
 
-        try {
-          this.printer.print(Integer.valueOf(resource.line_number));
-          this.printer.print(resource.name);
-          this.printer.print(text);
-          this.printer.println();
-        } catch (final IOException e) {
-          throw new SAXException(e);
-        }
+        final var translated =
+          TranslatedString.builder()
+            .setId(idText)
+            .setFile(this.file)
+            .setModule(this.module)
+            .setEnglish(text)
+            .build();
 
-        this.element = Optional.empty();
+        this.strings.put(idText, translated);
+        this.id = Optional.empty();
       }
+    }
+
+    private static String textFromCharacters(
+      final char[] ch,
+      final int start,
+      final int length)
+    {
+      // CHECKSTYLE:OFF
+      final var text = new String(ch, start, length);
+      // CHECKSTYLE:ON
+      return text;
     }
 
     @Override
@@ -156,32 +201,70 @@ public final class Main
     }
   }
 
-  public static void main(final String args[])
+  public static void main(
+    final String[] args)
     throws Exception
   {
     if (args.length == 0) {
-      throw new IllegalArgumentException("Usage: strings.xml");
+      throw new IllegalArgumentException("Usage: strings.xml [strings.xml ...]");
     }
 
-    final var path = Paths.get(args[0]).toAbsolutePath();
-    final var parsers = SAXParserFactory.newInstance();
-    final var parser = parsers.newSAXParser();
-    final var reader = parser.getXMLReader();
+    final var paths =
+      Stream.of(args)
+        .map(Paths::get)
+        .map(Path::toAbsolutePath)
+        .collect(Collectors.toList());
 
-    reader.setFeature(
-      XMLConstants.FEATURE_SECURE_PROCESSING,
-      true);
-    reader.setFeature(
-      "http://xml.org/sax/features/namespaces",
-      true);
+    try (var output = Files.newBufferedWriter(Paths.get("manifest.txt"))) {
+      for (final var path : paths) {
+        output.write(path.toString());
+        output.newLine();
+      }
+      output.flush();
+    }
 
-    try (final var printer =
-           CSVFormat.RFC4180.withHeader("GitHub Line", "Name", "English")
-             .printer()) {
-      try (final InputStream stream = Files.newInputStream(path)) {
-        final var content = new Content(printer);
+    final var strings =
+      new HashMap<String, TranslatedString>();
+
+    for (final var path : paths) {
+      final var parsers =
+        SAXParserFactory.newInstance();
+      final var parser =
+        parsers.newSAXParser();
+      final var reader =
+        parser.getXMLReader();
+
+      reader.setFeature(
+        XMLConstants.FEATURE_SECURE_PROCESSING,
+        true);
+      reader.setFeature(
+        "http://xml.org/sax/features/namespaces",
+        true);
+
+      try (InputStream stream = Files.newInputStream(path)) {
+        final var content = new Content(path, strings);
         reader.setContentHandler(content);
         reader.parse(new InputSource(stream));
+      }
+    }
+
+    try (var printer =
+           CSVFormat.RFC4180.withHeader("Module", "File", "ID", "English")
+             .printer()) {
+
+      final var values =
+        strings.values()
+          .stream()
+          .sorted()
+          .collect(Collectors.toList());
+
+      for (final var record : values) {
+        printer.printRecord(
+          record.module(),
+          record.file(),
+          record.id(),
+          record.english()
+        );
       }
     }
   }

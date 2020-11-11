@@ -1,3 +1,9 @@
+/*
+ * Copyright © 2020 Library For All
+ *
+ * Apache 2.0 license.
+ */
+
 package one.lfa.localization;
 
 import java.nio.file.Files;
@@ -17,12 +23,18 @@ public final class FixTetun
 
   private static final class OutputRecord
   {
-    String githubLine;
-    String id;
-    String text;
+    OutputRecord()
+    {
+
+    }
+
+    private String githubLine;
+    private String id;
+    private String text;
   }
 
-  public static void main(final String args[])
+  public static void main(
+    final String[] args)
     throws Exception
   {
     if (args.length != 2) {
